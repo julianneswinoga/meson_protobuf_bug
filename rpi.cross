@@ -1,0 +1,14 @@
+[constants]
+compiler_dir = '/usr'
+
+[binaries]
+c      = [compiler_dir / 'bin/arm-linux-gnueabihf-gcc']
+cpp    = [compiler_dir / 'bin/arm-linux-gnueabihf-g++']
+ar     = compiler_dir / 'bin/arm-linux-gnueabihf-ar'
+strip  = compiler_dir / 'bin/arm-linux-gnueabihf-strip'
+
+[host_machine]
+system = 'linux'
+cpu_family = 'arm'
+cpu = 'armv7l'
+endian = 'little'
